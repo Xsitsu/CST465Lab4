@@ -8,6 +8,8 @@
 
 @using (Html.BeginForm("Submit", "HHInputFor", FormMethod.Post))
 {
+    @Html.AntiForgeryToken()
+
     <div class="form-group">
         @Html.LabelFor(m => m.Name, new { @class = "control-label" })
         @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })

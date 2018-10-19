@@ -7,6 +7,8 @@
 <h2>TagHelper</h2>
 
 <form method="post" asp-action="Submit" asp-controller="TagHelper">
+    @Html.AntiForgeryToken()
+
     <div class="form-group">
         <label asp-for="Name" class="control-label"></label>
         <input type="text" asp-for="Name" class="form-control" />

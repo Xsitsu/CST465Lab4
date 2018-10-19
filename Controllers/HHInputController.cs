@@ -16,6 +16,7 @@ namespace Lab4.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Submit(ComputerModel model)
         {
             if (!ModelState.IsValid)

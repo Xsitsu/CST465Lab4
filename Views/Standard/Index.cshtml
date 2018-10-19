@@ -7,6 +7,8 @@
 <h2>Standard ComputerModel</h2>
 
 <form method="post" action="/Standard/Submit">
+    @Html.AntiForgeryToken()
+
     <div class="form-group">
         <label for="Name" class="control-label">Name</label>
         <input type="text" id="Name" name="Name" class="form-control" />
