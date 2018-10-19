@@ -1,0 +1,46 @@
+﻿@model ComputerModel
+
+@{
+    ViewData["Title"] = "TagHelper";
+}
+
+<h2>TagHelper</h2>
+
+<form method="post" asp-action="Submit" asp-controller="TagHelper">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AdminPassword" class="control-label"></label>
+        <input type="text" asp-for="AdminPassword" class="form-control" />
+        <span asp-validation-for="AdminPassword"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IpAddress" class="control-label"></label>
+        <input type="text" asp-for="IpAddress" class="form-control" />
+        <span asp-validation-for="IpAddress"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="control-label"></label>
+        <input type="text" asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="OS" class="control-label"></label>
+        <select asp-for="OS" class="form-control" asp-items="@(new SelectList(ComputerModel.OSTypes))"></select>
+        <span asp-validation-for="OS"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input type="text" asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SupportedMonitors" class="control-label"></label>
+        <input type="text" asp-for="SupportedMonitors" class="form-control" />
+        <span asp-validation-for="SupportedMonitors"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
