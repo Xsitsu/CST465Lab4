@@ -1,0 +1,47 @@
+﻿@model ComputerModel
+
+@{
+    ViewData["Title"] = "Standard";
+}
+
+<h2>Standard ComputerModel</h2>
+
+<form method="post" action="/Standard/Submit">
+    <div class="form-group">
+        <label for="Name" class="control-label">Name</label>
+        <input type="text" id="Name" name="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="AdminPassword" class="control-label">AdminPassword</label>
+        <input type="password" id="AdminPassword" name="AdminPassword" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="IpAddress" class="control-label">IpAddress</label>
+        <input type="text" id="IpAddress" name="IpAddress" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Location" class="control-label">Location</label>
+        <input type="text" id="Location" name="Location" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="OS" class="control-label">OS</label>
+        <select id="OS" name="OS" class="form-control">
+            @foreach (var item in @ComputerModel.OSTypes)
+            {
+                <option value="@item">
+                    @item
+                </option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Description" class="control-label">Description</label>
+        <input type="text" id="Description" name="Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="SupportedMonitors" class="control-label">SupportedMonitors</label>
+        <input type="number" id="SupportedMonitors" name="SupportedMonitors" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
