@@ -13,7 +13,7 @@
         @Html.TextBox("Name", "", new { @class = "form-control" })
     </div>
     <div class="form-group">
-        @Html.Label("AdminPassword", "AdminPassword", new { @class = "control-label" })
+        @Html.Label("AdminPassword", "Password", new { @class = "control-label" })
         @Html.Password("AdminPassword", "", new { @class = "form-control" })
     </div>
     <div class="form-group">
@@ -33,8 +33,8 @@
         @Html.TextBox("Description", "", new { @class = "form-control" })
     </div>
     <div class="form-group">
-        @Html.Label("SupportedMonitors", "SupportedMonitors", new { @class = "control-label" })
-        @Html.TextBox("SupportedMonitors", "", new { @class = "form-control" })
+        @Html.Label("SupportedMonitors", "Monitors", new { @class = "control-label" })
+        @Html.TextBox("SupportedMonitors", "", new { @class = "form-control", type="number"})
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
