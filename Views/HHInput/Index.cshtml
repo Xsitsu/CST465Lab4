@@ -1,0 +1,41 @@
+﻿@model ComputerModel
+
+@{
+    ViewData["Title"] = "HHInput";
+}
+
+<h2>HHInput</h2>
+
+@using (Html.BeginForm("Submit", "HHInput", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Name", "Name", new { @class = "control-label" })
+        @Html.TextBox("Name", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("AdminPassword", "AdminPassword", new { @class = "control-label" })
+        @Html.Password("AdminPassword", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("IpAddress", "IpAddress", new { @class = "control-label" })
+        @Html.TextBox("IpAddress", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Location", "Location", new { @class = "control-label" })
+        @Html.TextBox("Location", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("OS", "OS", new { @class = "control-label" })
+        @Html.DropDownList("OS", new SelectList(ComputerModel.OSTypes), new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Description", "Description", new { @class = "control-label" })
+        @Html.TextBox("Description", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.Label("SupportedMonitors", "SupportedMonitors", new { @class = "control-label" })
+        @Html.TextBox("SupportedMonitors", "", new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
