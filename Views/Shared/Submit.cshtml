@@ -6,10 +6,28 @@
 
 <h2>Submit</h2>
 
-<p>Name: @Model.Name</p>
-<p>Password: @Model.AdminPassword</p>
-<p>IpAddress: @Model.IpAddress</p>
-<p>Location: @Model.Location</p>
-<p>OS: @Model.OS</p>
-<p>Description: @Model.Description</p>
-<p>Monitors: @Model.SupportedMonitors</p>
+<div class="row">
+    <div class="col-sm-4">
+        <p>Name: @Model.Name</p>
+        <p>Password: @Model.AdminPassword</p>
+        <p>IpAddress: @Model.IpAddress</p>
+        <p>Location: @Model.Location</p>
+        <p>OS: @Model.OS</p>
+        <p>Description: @Model.Description</p>
+        <p>Monitors: @Model.SupportedMonitors</p>
+    </div>
+
+    <div class="col-sm-4">
+        <p>@Html.DisplayFor(model => model.Name)</p>
+        <p>@Html.DisplayFor(model => model.AdminPassword)</p>
+        <p>@Html.DisplayFor(model => model.IpAddress)</p>
+        <p>@Html.DisplayFor(model => model.Location)</p>
+        <p>@Html.DisplayFor(model => model.OS)</p>
+        <p>@Html.DisplayFor(model => model.Description)</p>
+        <p>@Html.DisplayFor(model => model.SupportedMonitors)</p>
+    </div>
+
+    <div class="col-sm-4">
+        @Html.DisplayForModel(Model)
+    </div>
+</div>
