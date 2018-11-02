@@ -27,7 +27,8 @@ namespace Lab4.Models
         [UIHint("OSDropdown")]
         public string OS { get; set; }
 
-        [DisplayName("textarea")]
+        [DisplayName("Description")]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         [Required]

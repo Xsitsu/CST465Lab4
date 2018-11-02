@@ -1,0 +1,14 @@
+﻿@model ComputerModel
+
+@{
+    ViewData["Title"] = "HHEditorForModel";
+}
+
+<h2>HHEditorForModel</h2>
+
+@using (Html.BeginForm("Submit", "HHEditorForModel", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.EditorForModel()
+}

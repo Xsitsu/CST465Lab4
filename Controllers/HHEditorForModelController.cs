@@ -8,12 +8,12 @@ using Lab4.Models;
 
 namespace Lab4.Controllers
 {
-    public class HHInputController : Controller
+    public class HHEditorForModelController : Controller
     {
         [HttpGet]
         public IActionResult Index()
         {
-            return View(new ComputerModel());
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]

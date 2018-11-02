@@ -5452,7 +5452,7 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.1": {
-      "sha512": "f8PKGcxiezL1RVqmnmrazj24Mj4KCTSXqwdotl7Lc+82h8iLV7ItxEIShTJakG7M9iw0ZuCocM0J/IhYesdQrg==",
+      "sha512": "BOK5fckW9v7xWjpEI6bPGwkjw10OPVASZcAa8HoWJo/0Mmg4Azddj92v8noU+YgvD/6zNZ9o/RiRXXKxk5rYwQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.1",
       "files": [
@@ -12224,11 +12224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\CST 465\\Lab\\Lab4\\Lab4.csproj",
+      "projectUniqueName": "Z:\\CST465\\CST465Lab4\\Lab4.csproj",
       "projectName": "Lab4",
-      "projectPath": "Z:\\CST 465\\Lab\\Lab4\\Lab4.csproj",
+      "projectPath": "Z:\\CST465\\CST465Lab4\\Lab4.csproj",
       "packagesPath": "C:\\Users\\jacob.locke\\.nuget\\packages\\",
-      "outputPath": "Z:\\CST 465\\Lab\\Lab4\\obj\\",
+      "outputPath": "Z:\\CST465\\CST465Lab4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
